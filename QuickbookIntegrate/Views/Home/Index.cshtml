@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="jumbotron">
+    <h1>QuickBooks Integration</h1>
+    <h3>Demonstrates connect to QuickBook API for retrieving company info and add customer</h3>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        @using (Html.BeginForm("InitiateAuth", "Home", FormMethod.Post))
+        {
+
+            <div><input type="submit" name="submitButton" value="Connect to QuickBooks"/></div>
+            <br/>
+          
+            <br/>
+        }
+    </div>
+</div>
